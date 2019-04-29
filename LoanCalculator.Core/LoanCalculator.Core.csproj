@@ -4,9 +4,21 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="LoanHelperDemo" Version="1.0.3" />
+    <PackageReference Include="LoanHelperDemo" Version="1.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.6.0-preview3.19128.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Hosting">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.hosting\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

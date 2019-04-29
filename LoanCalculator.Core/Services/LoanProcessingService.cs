@@ -1,9 +1,11 @@
 ﻿using LoanCalculator.Core.DataInterface;
 using LoanCalculator.Core.Domain;
 using LoanHelperDemo;
+using Microsoft.Extensions.Hosting.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Hosting;
 using System.Text;
 
 namespace LoanCalculator.Core.Services
@@ -12,11 +14,12 @@ namespace LoanCalculator.Core.Services
     {
         private List<ILoanQualificationRule> _loanApprovalRules;
         private List<LoanRate> _loanRates;
+        private IHostingEnvironment env;
 
-        public LoanProcessingService(ILoanRateRepository loanRateRepository, List<ILoanQualificationRule> rules)
+        public LoanProcessingService(ILoanRateRepository loanRateRepository, List<ILoanQualificationRule> rules, IHostingEnvironment env)
             : this(loanRateRepository.GetLoanRates(), rules.ToArray())
         {
-
+            this.env = env;
         }
 
         public LoanProcessingService(List<LoanRate> rates, params ILoanQualificationRule[] rules)
@@ -52,13 +55,25 @@ namespace LoanCalculator.Core.Services
                 creditScore >= r.LowerCreditScore 
                 && creditScore <= r.UpperCreditScore);
 
-            // Premiere bankers discount
-            if(application.ApplicantType.ToLower() == "premiere")
+            var interestRate = rate.InterestRate;
+
+            if (env.EnvironmentName.Contains("Prod"))
             {
-                return rate.InterestRate - 0.01;
+                var marketRate = LoanHelper.GetAdjustedMarketRate(creditScore, rate.InterestRate);
+
+                if(marketRate.RateAdjustment < interestRate)
+                {
+                    interestRate = marketRate.RateAdjustment;
+                }
             }
 
-            return rate.InterestRate;
+            // Premiere bankers discount
+            if (application.ApplicantType.ToLower() == "premiere")
+            {
+                return interestRate - 0.01;
+            }
+
+            return interestRate;
         }
 
 

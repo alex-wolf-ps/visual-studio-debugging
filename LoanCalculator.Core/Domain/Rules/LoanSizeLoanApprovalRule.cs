@@ -26,10 +26,9 @@ namespace LoanCalculator.Core.Domain
                 case double n when (n > 10_000 && n < 1_000_000):
                     // Loans from $10,000 to $1,000,000 are OK
                     return true;
-                case double n when (n > 1_000_000
-                    && application.ApplicantType.ToLower() == "premiere"):
+                case double n when (n > 1_000_000):
                     // Do not issue loans over $1,000,000
-                    return true;
+                    return false;
                 default:
                     return false;
             }

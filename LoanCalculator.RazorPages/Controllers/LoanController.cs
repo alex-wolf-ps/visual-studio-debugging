@@ -1,10 +1,12 @@
 ﻿using LoanCalculator.Core.DataInterface;
+using LoanHelperDemo;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Linq;
 
 namespace LoanCalculator.RazorPages.Controllers
 {
+    [Route("loans")]
     public class LoanController : Controller
     {
         private ILoanApplicationResultRepository loanApplicationRepo;
@@ -14,7 +16,7 @@ namespace LoanCalculator.RazorPages.Controllers
             this.loanApplicationRepo = repo;
         }
 
-        [HttpGet("loans")]
+        [HttpGet("")]
         public IActionResult Index(int start, int length = 2)
         {
             var loanResults = this.loanApplicationRepo.GetLoanApplicationResults();
@@ -30,7 +32,7 @@ namespace LoanCalculator.RazorPages.Controllers
                     result.LoanTerm = result.LoanTerm / 12;
                 }
             }
-
+            
             var response = new {
                 recordsFiltered = totalRecords,
                 recordsTotal = totalRecords, data = filteredLoanResults

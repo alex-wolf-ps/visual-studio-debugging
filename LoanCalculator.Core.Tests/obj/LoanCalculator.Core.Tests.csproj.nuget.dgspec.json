@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj": {}
+    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj": {}
   },
   "projects": {
-    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj": {
+    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj",
+        "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj",
         "projectName": "LoanCalculator.Core.Tests",
-        "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj",
+        "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core.Tests\\LoanCalculator.Core.Tests.csproj",
         "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
-        "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core.Tests\\obj\\",
+        "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
-                "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
+              "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
+                "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
+    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj",
+        "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj",
         "projectName": "LoanCalculator.Core",
-        "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj",
+        "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj",
         "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
-        "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\obj\\",
+        "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -111,7 +111,11 @@
           "dependencies": {
             "LoanHelperDemo": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.4.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

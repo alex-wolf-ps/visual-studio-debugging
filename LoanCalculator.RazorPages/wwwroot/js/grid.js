@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     var table = $('#loans').DataTable({
-        "processing": true, // for show progress bar
+        "processing": true,
         "serverSide": true,
         "ajax": '/loans',
         "rowId": "resultId",
@@ -9,7 +9,7 @@
             { "data": "firstName" },
             { "data": "lastName" },
             { "data": "loanAmount" },
-            { "data": "approved" },
+            { "data": "approved" }
         ]
     });
 
@@ -19,7 +19,9 @@
     $('#loans').on('click', 'tr', function () {
         var id = table.row(this).id();
         $.get("/loans/" + id, function (data) {
-            $("#details").html(data)
-        })
+            $("#details").html(data);
+        }).fail(function (data) {
+            console.log(data);
+        });
     });
 });

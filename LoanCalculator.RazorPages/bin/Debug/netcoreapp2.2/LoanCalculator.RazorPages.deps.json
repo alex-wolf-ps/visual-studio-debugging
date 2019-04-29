@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "11c8287bbc21c2fb0ea5a9ffcc0d5b0708ccaccd"
+    "signature": "6cd7e4ee28d8a3fb4ba37a3f061e5776114b6493"
   },
   "compilationOptions": {
     "defines": [
@@ -18,7 +18,7 @@
     "keyFile": "",
     "emitEntryPoint": true,
     "xmlDoc": false,
-    "debugType": "portable"
+    "debugType": "full"
   },
   "targets": {
     ".NETCoreApp,Version=v2.2": {
@@ -27,7 +27,7 @@
           "CreditCheckTest": "1.1.0",
           "LoanCalculator.Core": "1.0.0",
           "LoanCalculator.Data.EFCore": "1.0.0",
-          "LoanHelperDemo": "1.1.1",
+          "LoanHelperDemo": "1.4.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -51,14 +51,14 @@
           "lib/netstandard2.0/CreditCheck.dll": {}
         }
       },
-      "LoanHelperDemo/1.1.1": {
+      "LoanHelperDemo/1.4.0": {
         "dependencies": {
           "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7"
         },
         "runtime": {
           "lib/netstandard2.0/LoanHelperDemo.dll": {
-            "assemblyVersion": "1.0.8.0",
-            "fileVersion": "1.0.8.0"
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
           }
         },
         "compile": {
@@ -797,7 +797,8 @@
       },
       "LoanCalculator.Core/1.0.0": {
         "dependencies": {
-          "LoanHelperDemo": "1.1.1",
+          "LoanHelperDemo": "1.4.0",
+          "Microsoft.AspNetCore.Hosting": "2.2.0",
           "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7"
         },
         "runtime": {
@@ -3769,12 +3770,12 @@
       "path": "creditchecktest/1.1.0",
       "hashPath": "creditchecktest.1.1.0.nupkg.sha512"
     },
-    "LoanHelperDemo/1.1.1": {
+    "LoanHelperDemo/1.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jAWj6E6NTcPIqFavWQ6c6lWUFjRWRGbxOHzuvQe5F30N9c0s6aEhu1l7TRyJl7xtfQKb5L9re1SOkvtpeVNeKQ==",
-      "path": "loanhelperdemo/1.1.1",
-      "hashPath": "loanhelperdemo.1.1.1.nupkg.sha512"
+      "sha512": "sha512-HztLqVaQwsv8fr/H6sV2CU9JkBpRTcwtOJsvoxlf9xa+0saafvbs8TYfkR/7sxGfQ7F3yzPmKtJWJ3S0pcQxnQ==",
+      "path": "loanhelperdemo/1.4.0",
+      "hashPath": "loanhelperdemo.1.4.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",

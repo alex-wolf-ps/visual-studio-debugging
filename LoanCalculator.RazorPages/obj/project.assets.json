@@ -11,7 +11,7 @@
           "lib/netstandard2.0/CreditCheck.dll": {}
         }
       },
-      "LoanHelperDemo/1.1.1": {
+      "LoanHelperDemo/1.4.0": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7"
@@ -4905,7 +4905,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "LoanHelperDemo": "1.0.3",
+          "LoanHelperDemo": "1.4.0",
+          "Microsoft.AspNetCore.Hosting": "2.2.0",
           "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7"
         },
         "compile": {
@@ -4946,15 +4947,15 @@
         "lib/netstandard2.0/CreditCheck.dll"
       ]
     },
-    "LoanHelperDemo/1.1.1": {
-      "sha512": "jAWj6E6NTcPIqFavWQ6c6lWUFjRWRGbxOHzuvQe5F30N9c0s6aEhu1l7TRyJl7xtfQKb5L9re1SOkvtpeVNeKQ==",
+    "LoanHelperDemo/1.4.0": {
+      "sha512": "HztLqVaQwsv8fr/H6sV2CU9JkBpRTcwtOJsvoxlf9xa+0saafvbs8TYfkR/7sxGfQ7F3yzPmKtJWJ3S0pcQxnQ==",
       "type": "package",
-      "path": "loanhelperdemo/1.1.1",
+      "path": "loanhelperdemo/1.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/LoanHelperDemo.dll",
-        "loanhelperdemo.1.1.1.nupkg.sha512",
+        "loanhelperdemo.1.4.0.nupkg.sha512",
         "loanhelperdemo.nuspec"
       ]
     },
@@ -13368,7 +13369,7 @@
       "CreditCheckTest >= 1.1.0",
       "LoanCalculator.Core >= 1.0.0",
       "LoanCalculator.Data.EFCore >= 1.0.0",
-      "LoanHelperDemo >= 1.1.1",
+      "LoanHelperDemo >= 1.4.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
@@ -13382,11 +13383,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
+      "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
       "projectName": "LoanCalculator.RazorPages",
-      "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
+      "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
       "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
-      "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.RazorPages\\obj\\",
+      "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.RazorPages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13405,11 +13406,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
-              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
+            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
+              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
             },
-            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj": {
-              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\end\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj"
+            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj": {
+              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj"
             }
           }
         }
@@ -13429,7 +13430,7 @@
           },
           "LoanHelperDemo": {
             "target": "Package",
-            "version": "[1.1.1, )"
+            "version": "[1.4.0, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
