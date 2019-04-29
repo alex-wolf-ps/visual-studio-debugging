@@ -1,0 +1,32 @@
+﻿@page
+@model LoanHistoryModel
+
+@section scripts  {
+    <script src="~/js/grid.js"></script>
+}
+<h1 class="display-4">Loan Application History</h1>
+<p class="lead">Here you can view the full history of loan applications with various filtering and sorting options. Select a loan result from the grid on the left to view the details.</p>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <table id="loans" class="table table-striped table-bordered dt-responsive nowrap">
+            <thead class="thead-light">
+                <tr>
+                    <th>User Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Loan Amount</th>
+                    <th>Approved</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Will be filled in by jQuery -->
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <div id="details">
+            <p class="lead">Select a loan row to view the details.</p>
+        </div>
+    </div>
+</div>

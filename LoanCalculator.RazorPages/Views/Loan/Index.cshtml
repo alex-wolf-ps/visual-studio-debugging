@@ -1,0 +1,89 @@
+﻿@model LoanCalculator.Core.Domain.LoanApplicationResult
+
+    <table class="table table-striped table-bordered dt-responsive nowrap">
+        <thead class="thead-light">
+            <tr>
+                <th colspan="2">
+                  Loan Details
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    First Name:
+                </td>
+                <td>
+                    @Model.FirstName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    @Model.LastName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amount:
+                </td>
+                <td>
+                    @Math.Round(Model.LoanAmount, 2).ToString("c")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Term:
+                </td>
+                <td>
+                    @Model.LoanTerm
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Status:
+                </td>
+                <td>
+                    @((Model.Approved) ? "Approved" : "Denied")
+                </td>
+            </tr>
+            @if (!Model.Approved)
+            {
+                <tr>
+                    <td>
+                        Reason:
+                    </td>
+                    <td>
+                        @Model.DenialReason
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td>
+                    Monthly Payment:
+                </td>
+                <td>
+                    @Model.MonthlyPayment?.ToString("c")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Interest Rate:
+                </td>
+                <td>
+                    @{ 
+                        var label = "NA";
+                        if(Model.InterestRate != null)
+                        {
+                            var interest = Model.InterestRate * 100;
+                            label = Math.Round(interest.Value, 1)
+                                .ToString("0.00") + "%";
+                        }
+                    }
+                    @label
+                </td>
+            </tr>
+        </tbody>
+    </table>

@@ -1,0 +1,102 @@
+﻿@page
+@model LoanCalculator.RazorPages.Pages.NewLoan.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="title display-4">Create a New Loan</h1>
+<p class="lead">
+    This form allows you to create a new loan. Applications are automatically processed and may be rejected for a variety of reasons.  Contact your administrator for any unexpected denials.
+</p>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="LoanApplication.FirstName" class="control-label"></label>
+                <input asp-for="LoanApplication.FirstName" class="form-control" />
+                <span asp-validation-for="LoanApplication.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanApplication.LastName" class="control-label"></label>
+                <input asp-for="LoanApplication.LastName" class="form-control" />
+                <span asp-validation-for="LoanApplication.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanApplication.AnnualIncome" class="control-label"></label>
+                <input asp-for="LoanApplication.AnnualIncome" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanApplication.YearsEmployed" class="control-label"></label>
+                <input asp-for="LoanApplication.YearsEmployed" class="form-control" />
+                <span asp-validation-for="LoanApplication.YearsEmployed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanApplication.CreditScore" class="control-label"></label>
+                <input asp-for="LoanApplication.CreditScore" class="form-control" />
+                <span asp-validation-for="LoanApplication.CreditScore" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TermYears" class="control-label"></label>
+                <select class="form-control" asp-for="TermYears" asp-items="Model.LoanTerms">
+                </select>
+                <span asp-validation-for="LoanApplication.Term" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @{ 
+                    var items = new List<SelectListItem>() {
+                        new SelectListItem() { Value = "Standard", Text = "Standard" },
+                        new SelectListItem() { Value = "Premiere", Text = "Premiere" },
+                        new SelectListItem() { Value = "Medical", Text = "Medical" }
+                    };
+                }
+                <label asp-for="LoanApplication.ApplicantType" class="control-label"></label>
+                <select class="form-control" asp-for="LoanApplication.ApplicantType" asp-items="items">
+                    <option value="0">Pick one</option>
+                </select>
+                <span asp-validation-for="LoanApplication.Term" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanApplication.LoanAmount" class="control-label"></label>
+                <input asp-for="LoanApplication.LoanAmount" class="form-control" />
+                <span asp-validation-for="LoanApplication.LoanAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Analyze Loan" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5 offset-1">
+        <div class="card">
+            <div class="card-header">
+                Tips for a Successful Application
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Remember...</h5>
+                <p class="card-text">Every loan application is unique, and our system uses advanced algorithms to approve or deny alone.  However, here are some general tips to keep in mind.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Loans cannot be larger than the applicant's annual income.</li>
+                <li class="list-group-item">Rates and terms can vary in real time.</li>
+                <li class="list-group-item">Credit scores can impact interest rates.</li>
+                <li class="list-group-item">Larger loans require employment history.</li>
+                <li class="list-group-item">Terms may vary depending on the size of the loan.</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">View Rates</a>
+                <a href="#" class="card-link">View Terms</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-page="/LoanHistory/Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,97 @@
+﻿@page
+@model LoanCalculator.RazorPages.Pages.NewLoan.LoanApplicationResultModel
+@{
+    ViewData["Title"] = "LoanApplicationResult";
+}
+
+<h1 class="title display-4">Loan Application Result</h1>
+
+@if (Model.Result.Approved)
+{
+    <p class="lead">
+        Congratulations! Your loan was <span class="text-success font-weight-bold">approved</span>. You can view the details below. One of our loan representatives will follow up with your shortly via phone or email.
+    </p>
+}
+else
+{
+    <p>
+        Unfortunately your loan has been <span class="text-danger font-weight-bold">denied</span>. You can view the details below, and a customer service representative will follow up with you shortly.
+</p>
+}
+
+<div>
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    @Model.Result.FirstName  @Model.Result.LastName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amount:
+                </td>
+                <td>
+                    @Model.Result.LoanAmount.ToString("c")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Credit Score:
+                </td>
+                <td>
+                    @Model.Result.CreditScore
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Term:
+                </td>
+                <td>
+                    @Model.Result.LoanTerm
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Status:
+                </td>
+                <td>
+                    @((Model.Result.Approved) ? "Approved" : "Denied")
+                </td>
+            </tr>
+            @if (!Model.Result.Approved)
+            {
+                <tr>
+                    <td>
+                        Reason:
+                    </td>
+                    <td>
+                        <span class="text-danger font-weight-bold">@Model.Result.DenialReason</span>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td>
+                    Monthly Payment:
+                </td>
+                <td>
+                    @Model.Result.MonthlyPayment?.ToString("c")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Interest Rate:
+                </td>
+                <td>
+                    @Model.Result.InterestRate?.ToString("0%")
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn-primary btn" style="margin-top: 25px" asp-area="" asp-page="/Index">Return to List</a>
+</div>
+

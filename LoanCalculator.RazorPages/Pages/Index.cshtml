@@ -1,0 +1,152 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<h1 class="display-3">
+    Welcome to the Loan Application!
+</h1>
+<p class="lead">Here you can manage loan applications for our customers.  Currently this site allows you to create new loans, view historical applications, and view current terms and rates.</p>
+<hr />
+<br />
+<h2 class="title display-4">Recent Loan Applications</h2>
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-responsive-lg">
+                    <thead class="text-light thead-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Loan Amount</th>
+                            <th>Status</th>
+                            <th>Reason</th>
+                            <th>Interest Rate</th>
+                            <th>Payment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.LoanApplicationResults)
+                        {
+                            <tr>
+                                <td>@item.ResultId</td>
+                                <td>@item.FirstName  @item.LastName</td>
+                                <td class="text-right">@item.LoanAmount.ToString("c")</td>
+                                <td class="text-center">@(item.Approved ? "Approved" : "Denied")</td>
+                                <td>@item.DenialReason</td>
+                                <td class="text-right">@item.InterestRate?.ToString("0.00%")</td>
+                                <td class="text-right">@item.MonthlyPayment?.ToString("c")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <a href="/loanhistory" class="btn btn-success float-right">View Loan History</a>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12">
+                <hr />
+                <h2 class="title display-4">Current Loan Rates</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        The Market Rates
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Loan Type
+                                    </th>
+                                    <th>
+                                        Rate
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.MarketRates)
+                                {
+                                    <tr>
+                                        <td>
+                                            @item.Label
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:P2}.", item.MinRate)
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Our Rates
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-responsive table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Low Credit Score
+                                    </th>
+                                    <th>
+                                        Upper Credit Score
+                                    </th>
+                                    <th>
+                                        Interest Rate
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.LoanRates)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.LowerCreditScore)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UpperCreditScore)
+                                        </td>
+                                        <td>
+                                            @String.Format("{0:P2}.", item.InterestRate)
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                We're growing!
+            </div>
+            <img src="~/images/grow.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Some quick weekly stats...</h5>
+                <h6 class="card-subtitle mb-2 text-muted">All thanks to our hard working team. Keep it up!</h6>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="badge badge-secondary">25</span> approvals</li>
+                    <li class="list-group-item"><span class="badge badge-secondary">15</span> denials</li>
+                    <li class="list-group-item"><span class="badge badge-secondary">3.2%</span> average interest rate</li>
+                    <li class="list-group-item"><span class="badge badge-secondary">10%</span> growth in Q1</li>
+                </ul>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-link float-right">Create a loan</a>
+            </div>
+        </div>
+        <br />
+        
+    </div>
+</div>
