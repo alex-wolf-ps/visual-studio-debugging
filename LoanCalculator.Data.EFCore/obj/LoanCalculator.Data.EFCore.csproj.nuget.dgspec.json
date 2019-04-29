@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj": {}
+  },
+  "projects": {
+    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj",
+        "projectName": "LoanCalculator.Core",
+        "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj",
+        "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
+        "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "LoanHelperDemo": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.6.0-preview3.19128.7, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj",
+        "projectName": "LoanCalculator.Data.EFCore",
+        "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj",
+        "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
+        "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Data.EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
+                "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m02\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
