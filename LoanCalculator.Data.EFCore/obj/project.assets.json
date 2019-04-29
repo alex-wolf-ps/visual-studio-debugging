@@ -4573,11 +4573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj",
+      "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj",
       "projectName": "LoanCalculator.Data.EFCore",
-      "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj",
+      "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj",
       "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
-      "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Data.EFCore\\obj\\",
+      "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Data.EFCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4596,8 +4596,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
-              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
+            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
+              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
             }
           }
         }

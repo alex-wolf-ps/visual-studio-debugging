@@ -41,7 +41,7 @@ namespace LoanCalculator.RazorPages.Controllers
             return Ok(response);
         }
 
-        [HttpGet("loans/{id}")]
+        [HttpGet("{id}")]
         public IActionResult Index(int id)
         {
             var loan = this.loanApplicationRepo.GetLoanApplicationResult(id);

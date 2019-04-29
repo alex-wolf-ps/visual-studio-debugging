@@ -13383,11 +13383,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
+      "projectUniqueName": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
       "projectName": "LoanCalculator.RazorPages",
-      "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
+      "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.RazorPages\\LoanCalculator.RazorPages.csproj",
       "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
-      "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.RazorPages\\obj\\",
+      "outputPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.RazorPages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13406,11 +13406,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
-              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
+            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj": {
+              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Core\\LoanCalculator.Core.csproj"
             },
-            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj": {
-              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\start\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj"
+            "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj": {
+              "projectPath": "F:\\Pluralsight\\Visual Studio Debugging\\visual-studio-2019-debugging-m03\\deliverables\\end\\LoanCalculator.Data.EFCore\\LoanCalculator.Data.EFCore.csproj"
             }
           }
         }

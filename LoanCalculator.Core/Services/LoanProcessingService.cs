@@ -61,9 +61,9 @@ namespace LoanCalculator.Core.Services
             {
                 var marketRate = LoanHelper.GetAdjustedMarketRate(creditScore, rate.InterestRate);
 
-                if(marketRate.RateAdjustment < interestRate)
+                if(marketRate.RecommendedRate < interestRate)
                 {
-                    interestRate = marketRate.RateAdjustment;
+                    interestRate = marketRate.RecommendedRate;
                 }
             }
 
