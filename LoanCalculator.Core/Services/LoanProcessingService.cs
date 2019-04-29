@@ -28,10 +28,10 @@ namespace LoanCalculator.Core.Services
         public LoanApplicationResult ProcessLoan(LoanApplication application)
         {
             // Check loan qualification rules
-            var failingRules = _loanApprovalRules.FirstOrDefault(
-                rule => rule.CheckLoanApprovalRule(application) == false);
+            var failingRules = _loanApprovalRules.Where(
+                rule => rule.CheckLoanApprovalRule(application) == false).ToList();
 
-            if (failingRules != null)
+            if (failingRules.Count > 0)
             {
                 var result = LoanApplicationResult.CreateDeniedResult(application, failingRules);
                 return result;
@@ -55,7 +55,7 @@ namespace LoanCalculator.Core.Services
             // Premiere bankers discount
             if(application.ApplicantType.ToLower() == "premiere")
             {
-                return rate.InterestRate + 0.1;
+                return rate.InterestRate - .01;
             }
 
             return rate.InterestRate;
