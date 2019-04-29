@@ -45,34 +45,8 @@ namespace LoanCalculator.RazorPages.Pages
             catch (Exception e)
             {
                 // Todo: Log the error
+                Debug.WriteLine(e);
             }
-        }
-
-        private List<MarketRate> GetSampleMarketRates()
-        {
-            return new List<MarketRate>()
-            {
-                new MarketRate()
-                {
-                    Label = "Auto",
-                    MinRate = .02
-                },
-                new MarketRate()
-                {
-                    Label = "Home",
-                    MinRate = .04
-                },
-                new MarketRate()
-                {
-                    Label = "Personal",
-                    MinRate = .05
-                },
-                new MarketRate()
-                {
-                    Label = "Education",
-                    MinRate = .06
-                }
-            };
         }
     }
 }

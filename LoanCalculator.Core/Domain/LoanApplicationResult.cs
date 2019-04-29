@@ -7,6 +7,7 @@ using System.Text;
 
 namespace LoanCalculator.Core.Domain
 {
+    [DebuggerDisplay("First Name = {FirstName} Approved = {Approved}")]
     public class LoanApplicationResult
     {
 

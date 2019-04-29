@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "16114843e2f03db5cf017b0c0b4bb2cc3a8270b5"
+    "signature": "a15e1933d12cbdf0de6d12815899acba8113847e"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "LoanCalculator.Core/1.0.0": {
         "dependencies": {
-          "LoanHelperDemo": "1.4.0",
+          "LoanHelperDemo": "1.0.3",
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7"
         },
@@ -17,14 +17,14 @@
           "LoanCalculator.Core.dll": {}
         }
       },
-      "LoanHelperDemo/1.4.0": {
+      "LoanHelperDemo/1.0.3": {
         "dependencies": {
           "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7"
         },
         "runtime": {
           "lib/netstandard2.0/LoanHelperDemo.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
           }
         }
       },
@@ -50,12 +50,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "LoanHelperDemo/1.4.0": {
+    "LoanHelperDemo/1.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HztLqVaQwsv8fr/H6sV2CU9JkBpRTcwtOJsvoxlf9xa+0saafvbs8TYfkR/7sxGfQ7F3yzPmKtJWJ3S0pcQxnQ==",
-      "path": "loanhelperdemo/1.4.0",
-      "hashPath": "loanhelperdemo.1.4.0.nupkg.sha512"
+      "sha512": "sha512-jS8N+TWeeIWs27OZOrSe+ztnpA9qEa/cPShZAbXwLicN68nCiiQrGYrDR0/hNz9IGHuQkiElC4xz+k463T8EDQ==",
+      "path": "loanhelperdemo/1.0.3",
+      "hashPath": "loanhelperdemo.1.0.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

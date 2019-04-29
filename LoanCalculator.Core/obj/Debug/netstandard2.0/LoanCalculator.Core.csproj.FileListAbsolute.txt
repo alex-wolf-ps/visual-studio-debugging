@@ -16,12 +16,3 @@ F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\De
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfo.cs
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.dll
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.pdb
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.deps.json
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.dll
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.pdb
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.csprojAssemblyReference.cache
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.csproj.CoreCompileInputs.cache
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfoInputs.cache
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfo.cs
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.dll
-F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m02\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.pdb
