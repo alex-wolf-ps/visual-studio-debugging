@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
@@ -9,7 +9,6 @@
   <ItemGroup>
     <PackageReference Include="CreditCheckTest" Version="1.1.0" />
     <PackageReference Include="LoanHelperDemo" Version="1.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
 
