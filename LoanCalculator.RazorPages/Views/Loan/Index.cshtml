@@ -77,9 +77,7 @@
                         var label = "NA";
                         if(Model.InterestRate != null)
                         {
-                            var interest = Model.InterestRate * 100;
-                            label = Math.Round(interest.Value, 1)
-                                .ToString("0.00") + "%";
+                            label = Model.InterestRate.Value.ToString("P");
                         }
                     }
                     @label

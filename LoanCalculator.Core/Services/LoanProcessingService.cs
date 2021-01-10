@@ -28,10 +28,10 @@ namespace LoanCalculator.Core.Services
         public LoanApplicationResult ProcessLoan(LoanApplication application)
         {
             // Check loan qualification rules
-            var failingRules = _loanApprovalRules.FirstOrDefault(
-                rule => rule.CheckLoanApprovalRule(application) == false);
+            var failingRules = _loanApprovalRules.Where(
+                rule => rule.CheckLoanApprovalRule(application) == false).ToList();
 
-            if (failingRules != null)
+            if (failingRules.Count > 0)
             {
                 var result = LoanApplicationResult.CreateDeniedResult(application, failingRules);
                 return result;
@@ -55,7 +55,7 @@ namespace LoanCalculator.Core.Services
             // Premiere bankers discount
             if(application.ApplicantType.ToLower() == "premiere")
             {
-                return rate.InterestRate + 0.1;
+                return rate.InterestRate - 0.01;
             }
 
             return rate.InterestRate;
@@ -65,7 +65,7 @@ namespace LoanCalculator.Core.Services
         internal double CalculateLoanPayment(double loanAmount, int termYears, double interestRate)
         {
             int totalPayments = termYears * 12;
-            double monthlyInterest = interestRate / 12.0;
+            double monthlyInterest = interestRate / 12;
             double discountFactor = ((Math.Pow((1 + monthlyInterest),  totalPayments)) - 1.0) /
                 (monthlyInterest * Math.Pow((1 + monthlyInterest), totalPayments));
 

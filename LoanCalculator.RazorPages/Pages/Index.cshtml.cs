@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CreditCheck;
-using LoanCalculator.Core.DataInterface;
+﻿using LoanCalculator.Core.DataInterface;
 using LoanCalculator.Core.Domain;
 using LoanHelperDemo;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 
 namespace LoanCalculator.RazorPages.Pages
 {
@@ -29,7 +27,7 @@ namespace LoanCalculator.RazorPages.Pages
 
         public List<LoanRate> LoanRates { get; set; }
 
-        public List<MarketRate> MarketRates { get; set; }
+        public List<DisplayRate> MarketRates { get; set; }
 
         public List<LoanApplicationResult> LoanApplicationResults { get; set; }
 
@@ -39,14 +37,14 @@ namespace LoanCalculator.RazorPages.Pages
             LoanApplicationResults = _loanResultRepository.GetLoanApplicationResults().Take(5).ToList();
             LoanRates = _loanRateRepository.GetLoanRates();
 
-
-            if (_env.EnvironmentName == "Development")
+            try
             {
-                MarketRates = this.GetSampleMarketRates();
+                // Loan Helper from Nuget Package to get market rates
+                MarketRates = LoanHelper.GetMarketRates();
             }
-            else
+            catch (Exception e)
             {
-                // Todo: Simulate 3rd party library that only works in prod
+                // Todo: Log the error
             }
         }
 

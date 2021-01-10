@@ -1,6 +1,7 @@
 ﻿using LoanCalculator.Core.DataInterface;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -36,8 +37,10 @@ namespace LoanCalculator.Core.Domain
 
 
         public static LoanApplicationResult CreateDeniedResult(
-            LoanApplication application, ILoanQualificationRule failedRule)
+            LoanApplication application, List<ILoanQualificationRule> failedRules)
         {
+            var failedReasons = string.Join(" ", failedRules.Select(x => x.RuleName));
+
             return new LoanApplicationResult()
             {
                 FirstName = application.FirstName,
@@ -47,7 +50,7 @@ namespace LoanCalculator.Core.Domain
                 LoanAmount = application.LoanAmount,
                 LoanTerm = application.Term.Years,
                 Approved = false,
-                DenialReason = failedRule.RuleName,
+                DenialReason = failedReasons,
                 ApplicantType = application.ApplicantType
             };
         }
