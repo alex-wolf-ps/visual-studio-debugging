@@ -35,12 +35,11 @@ namespace LoanCalculator.RazorPages
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
             var connectionString = "DataSource=:memory:";
             services.ConfigureSqlLiteDatabase(connectionString);
             services.ConfigureRepositories();
+
+            services.AddRazorPages();
 
             var rules = new List<ILoanQualificationRule>()
             {
@@ -54,9 +53,9 @@ namespace LoanCalculator.RazorPages
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.EnvironmentName == "Development")
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -71,7 +70,13 @@ namespace LoanCalculator.RazorPages
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc();
+            app.UseRouting();
+
+            app.UseEndpoints(ep =>
+            {
+                ep.MapDefaultControllerRoute();
+                ep.MapRazorPages();
+            });
         }
     }
 }

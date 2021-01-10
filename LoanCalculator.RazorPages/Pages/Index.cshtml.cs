@@ -12,13 +12,13 @@ namespace LoanCalculator.RazorPages.Pages
 {
     public class IndexModel : PageModel
     {
-        private IHostingEnvironment _env;
+        private IWebHostEnvironment _env;
 
         private ILoanApplicationResultRepository _loanResultRepository;
 
         private ILoanRateRepository _loanRateRepository;
 
-        public IndexModel(ILoanApplicationResultRepository loanResultRepository, ILoanRateRepository rateRepo, IHostingEnvironment environment)
+        public IndexModel(ILoanApplicationResultRepository loanResultRepository, ILoanRateRepository rateRepo, IWebHostEnvironment environment)
         {
             _env = environment;
             _loanResultRepository = loanResultRepository;
