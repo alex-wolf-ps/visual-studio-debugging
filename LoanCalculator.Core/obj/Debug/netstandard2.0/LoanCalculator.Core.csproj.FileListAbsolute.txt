@@ -16,3 +16,11 @@ F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\De
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfo.cs
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.dll
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.deps.json
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfoInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfo.cs
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.csproj.CoreCompileInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.pdb
