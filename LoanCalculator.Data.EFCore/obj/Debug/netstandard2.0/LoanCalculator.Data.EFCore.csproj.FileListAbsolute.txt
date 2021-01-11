@@ -34,3 +34,15 @@ F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\delivera
 F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\deliverables\start\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.csproj.CopyComplete
 F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\deliverables\start\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.dll
 F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\deliverables\start\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\bin\Debug\netstandard2.0\LoanCalculator.Data.EFCore.deps.json
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\bin\Debug\netstandard2.0\LoanCalculator.Data.EFCore.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\bin\Debug\netstandard2.0\LoanCalculator.Data.EFCore.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\bin\Debug\netstandard2.0\LoanCalculator.Core.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\bin\Debug\netstandard2.0\LoanCalculator.Core.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.csprojAssemblyReference.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.AssemblyInfoInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.AssemblyInfo.cs
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.csproj.CoreCompileInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.csproj.CopyComplete
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Data.EFCore\obj\Debug\netstandard2.0\LoanCalculator.Data.EFCore.pdb

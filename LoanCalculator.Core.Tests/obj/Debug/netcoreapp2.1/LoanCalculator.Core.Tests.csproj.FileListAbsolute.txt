@@ -32,3 +32,21 @@ F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core.Tests\
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.csproj.CopyComplete
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.dll
 F:\Pluralsight\Visual Studio Debugging\LoanCalculator\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.deps.json
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.runtimeconfig.json
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.runtimeconfig.dev.json
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\LoanCalculator.Core.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\bin\Debug\netcoreapp2.1\LoanCalculator.Core.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.csprojAssemblyReference.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.AssemblyInfoInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.AssemblyInfo.cs
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.csproj.CoreCompileInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.csproj.CopyComplete
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core.Tests\obj\Debug\netcoreapp2.1\LoanCalculator.Core.Tests.genruntimeconfig.cache

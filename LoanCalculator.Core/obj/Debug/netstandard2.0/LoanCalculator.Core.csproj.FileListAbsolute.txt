@@ -31,3 +31,14 @@ F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\delivera
 F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.csproj.CopyComplete
 F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.dll
 F:\Pluralsight\Visual Studio Debugging\visual-studio-2019-debugging-m03\deliverables\start\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.deps.json
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\LoanCalculator.Core.pdb
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\Microsoft.Extensions.Hosting.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\bin\Debug\netstandard2.0\Microsoft.Extensions.Hosting.xml
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfoInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.AssemblyInfo.cs
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.csproj.CoreCompileInputs.cache
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.csproj.CopyComplete
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.dll
+C:\Projects\debugging\visual-studio-debugging\LoanCalculator.Core\obj\Debug\netstandard2.0\LoanCalculator.Core.pdb
